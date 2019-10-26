@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/styles/login form.css">
+</head>
+<body>
+
+
+  <form method="POST">
+    <div class="imgcontainer">
+          <img src="/static/images/login images.png" alt="logo" class=" logo" width="100px" height="100px">
+    </div>
+
+      <div class="container" align ="center">
+        <input type="text" placeholder=" Username" name="username" value="{{request.form.username}}"> <br>
+        <input type="password" placeholder=" Password" name="password" value="{{request.form.password}}">
+          <br>  
+        <button type="submit">Sign in</button>
+        <br>
+        {% if error%}
+        {{error}}
+        {%endif%}  
+      </div>
+      </form>
+      <div align ="center">
+      <br> <label>
+    No account yet? <a href="/">Sign Up</a> <br>
+    </label>
+  </div>
+
+
+
+</body>
+</html>

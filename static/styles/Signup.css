@@ -1,0 +1,23 @@
+body{
+    background: rgb(12, 12, 12);
+    direction: ltr;
+    font-size: 14px;
+    line-height: 1.4286;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px rgb(6, 6, 7) solid;
+    color: white;
+    background: rgb(16, 16, 17);
+    padding: 5px;
+}
+.segment{
+padding: 20px;
+}
+
+

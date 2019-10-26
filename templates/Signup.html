@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/styles/w3.css">
+    <link rel="stylesheet" href="/static/styles/Signup.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div  class="main ">
+        <div align="center">
+            <h1>Sign Up</h1><br>
+            <form method="POST">
+            <div align="left">
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell">First Name <br> <input type="text" name="name1" size="40" placeholder="Enter First name"></div> 
+                    <div class="w3-container w3-cell">Surname <br><input type="text" name="name2" size="40" placeholder="Enter Surname"></div>
+                </div>
+                <div class="segment">User Name <br><input type="text" name="username" placeholder="Enter Username" size="99" value="{{request.form.username}}"></div>
+                <div class="segment">Email <br><input type="email" name="userEmail" placeholder="Enter email" size="99"></div>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell">Date of Birth <input type="date" name="dob" value="{{request.form.dob}}" ></div>
+                    <div class="w3-container w3-cell">Mobile Number <input type="tel" name="telNo" placeholder="Enter mobile number" size="30"></div>        
+                </div>
+                <div class="segment">Password <br><input type="password" name="password1" placeholder="Enter password" size="99" value="{{request.form.password}}" ></div>
+                <div class="segment">Confirm Password <br><input type="password" name="password2" placeholder="Confirm password" size="99" value="{{request.form.password}}" ></div>
+            </div>
+            <button  type="submit"> Submit</button>
+            </form>  
+            {% if error%}
+            {{error}}
+            {%endif%}
+            <br><br><br><br>
+            Already SignUp?<a href="login" class="w3-text-blue">Login</a>
+        </div>
+    </div>
+</body>
+</html>
