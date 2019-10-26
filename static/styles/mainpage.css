@@ -91,13 +91,7 @@
  }
  div .body{
  color: blue;
- display: block;
- width: 20px;
- height: 4px;
- margin-bottom: 5px;
- position: relative;
-  float: right;
-
+  float: left;
  }
 
  
